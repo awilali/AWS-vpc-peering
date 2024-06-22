@@ -36,7 +36,7 @@ Access request.
 FinanceVPC route table:<br>
 ![FinRouteTable](https://github.com/awilali/vpc-peering/assets/60300580/1ea0593e-89d5-4f21-bb8c-d6626c09eaea)
 
-FinanceVPC route table:<br>
+DeveloperVPC route table:<br>
 ![DevRouteTable](https://github.com/awilali/vpc-peering/assets/60300580/f207b432-1c0e-4cfc-b997-15275ac7af79)
 
 3. Go to each EC2's security group and add a rule "All ICMP - IPv4" with connection to "0.0.0.0/0" <br>
