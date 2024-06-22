@@ -6,7 +6,7 @@ VPC peering will allow communication between applications hosted in different VP
 
 Steps to creating this solution.
 
-The solution uses a separate VPC for each department: Marketing, Finance & Developer. THe VPCs are connected by using VPC peering so that the resources in each can communicate with one another.
+The solution uses a separate VPC for each department: Marketing, Finance & Developer. The VPCs are connected by using VPC peering so that the resources in each can communicate with one another.
 
 1. The Finance VPC is central, containing resources that are shared with the Marketing and Developer VPCs.
 2. Since VPCs are isolated by default, 2 VPC peering connections are created, one connection between Marketing and Finance VPC and the other connection between the Developer and Finance VPC. A VPC peering connection is a networking connection between 2 VPCs that you can use to route traffic between them by using private IPv4 or IPv6 addresses.
@@ -15,5 +15,3 @@ The solution uses a separate VPC for each department: Marketing, Finance & Devel
 4. To access the Finance VPC, the Marketing VPC route table points to the VPC peering connection.
 5. Likewise, to access the Finance VPC, the Developer VPC route table points to the VPC peering connection.
 6. There's no VPC peering connection between the Marketing and Developer VPCs, thus they do not share access.
-
-Steps:
